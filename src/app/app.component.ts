@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component } from '@angular/core';
 import anime from 'animejs';
 
