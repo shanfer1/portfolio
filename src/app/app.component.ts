@@ -15,11 +15,30 @@ export class AppComponent implements AfterViewInit{
   }
   experiences = [
     {
-      title: 'Senior Developer',
-      group: 'Tech Group',
-      subHeading: 'Full Stack Development',
-      description: 'Short paragraph about the experience...'
+      title: 'Software Developer',
+      group: 'WaterDMD',
+      subHeading: 'Arizona State University',
+      url:'/assets/nmde_logo.jpeg',
+      description: "In our software development team, I've led the creation of a Geo Visualization tool with Angular, enhanced predictive analytics with an LSTM-based mental modeler, and contributed to a TensorFlow-powered fitness app. I've also addressed NLP model biases and enriched social network analysis, consistently focusing on user-centric design and collaborative product development."
     },
+
+    {
+      title: 'Software Developer Intern',
+      group: 'T1 Mapping',
+      subHeading: 'UAI Imaging Intelligence',
+      url:'/assets/uai_logo.jpeg',
+      description: "Spearheaded the development of a T1 mapping Dicom Image dashboard leveraging Vue.js to expedite cardiac anomaly detection."
+    },
+
+    {
+      title: 'Edison Software Developer',
+      group: 'WaterDMD',
+      subHeading: 'GE Healthcare',
+      url:'/assets/ge_healthcare.jpeg',
+      description: "In our software development team, I've led the creation of a Geo Visualization tool with Angular, enhanced predictive analytics with an LSTM-based mental modeler, and contributed to a TensorFlow-powered fitness app. I've also addressed NLP model biases and enriched social network analysis, consistently focusing on user-centric design and collaborative product development."
+    },
+
+
   ];
   ngAfterViewInit(): void {
     this.animatedBlocks();
