@@ -20,6 +20,18 @@
         
           {{experience.description}}
       </p>
+      <div *ngIf="experience.products" class="product-buttons">
+      <button *ngFor="let productKey of objectKeys(experience.products)" 
+              pButton type="button" 
+              label="{{productKey}}" 
+              (click)="openProduct(experience.products[productKey])" 
+              class="p-button-success productbuttons"> <i class="pi pi-send" style="font-size: 1.2rem"></i>
+            </button>
+    </div>
+      <p class="techstack">
+        
+        Tech Stack : {{experience.tech}}
+    </p>
      
   </p-card>
   </div>
