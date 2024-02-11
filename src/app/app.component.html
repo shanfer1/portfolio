@@ -1,1 +1,25 @@
-<app-home></app-home>
+<div class="container">
+  <h2>Muhammed Shanfer Majeed<br><span>Sofware Developer</span></h2>
+  <div class="links">
+    <a href="#projects" class="link">Projects</a>
+    <a href="#research" class="link">Research</a>
+    <a href="#resume" class="link">Resume</a>
+  </div>
+  <div class="card-container">
+
+    <p-card header="Advanced Card"  *ngFor="let experience of experiences" subheader="Card Subheader" >
+      <ng-template pTemplate="header">
+          <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+      </ng-template>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
+          quas!
+      </p>
+      <ng-template pTemplate="footer">
+          <p-button label="Save" icon="pi pi-check"></p-button>
+          <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
+      </ng-template>
+  </p-card>
+  </div>
+  <div class="block" *ngFor="let i of blockNumber"></div>
+</div>
