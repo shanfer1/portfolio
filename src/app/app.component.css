@@ -13,7 +13,7 @@
     margin-top: 20px; /* Adjust the value as needed for spacing */
 }
 .link {
-    color: black; /* Or any other color that fits the design */
+    color: #333; /* Text color, adjust as needed */
     text-decoration: none; /* Removes underline from links */
     font-size: 2vw; /* Adjust as needed for the right size */
     margin: 0 10px; /* Spacing between the links */
@@ -30,7 +30,7 @@
     border-color: #e80202; /* Example border color on hover */
 }
 h2{
-    color: black;
+    color: #333; /* Text color, adjust as needed */
     text-align: center;
     font-size: 4vw;
     line-height: 0.6em;
@@ -43,6 +43,17 @@ h2 span{
     font-weight: 400;
     text-transform: uppercase;
 }
+@media (max-width: 1024px) {
+    p-card {
+      flex: 0 0 calc(50% - 40px); /* Two cards per row on medium screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    p-card {
+      flex: 0 0 100%; /* One card per row on small screens */
+    }
+  }
 .block{
     position: absolute;
     width: 50px;
@@ -53,22 +64,35 @@ h2 span{
 }
 
 
-  
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    font-family: 'Merriweather', serif;
-
-    gap: 20px; /* Adjust the gap between cards */
-    max-width: 960px; /* This should be three times the card width plus the gap. */
+    justify-content: space-around; /* This will space out the cards evenly */
+    align-items: stretch; /* This will ensure that all cards stretch to fill the container's height */
+    max-width: 1200px; /* This should be the total width of the three cards plus the gaps. Adjust as necessary. */
     margin: 0 auto; /* Center the card container */
+    gap: 20px; /* Adjust the gap between cards */
   }
   
   p-card {
-    font-family: 'Merriweather', serif;
-    flex: 0 0 calc(33.333% - 20px); 
-    margin-bottom: 20px; 
+    flex: 0 0 calc(33.333% - 40px); /* Subtract the total gap from the width (20px gap on each side of a card) */
+    box-sizing: border-box; /* This ensures padding and border are included in the width calculation */
   }
+  
+  .experience-heading {
+    color: #333; /* Text color, adjust as needed */
+    text-align: center; /* Aligns the text to the center */
+    margin-top: 60px; /* Adds space above the heading */
+    margin-bottom: 20px; /* Adds space below the heading before the cards start */
+    font-family: 'Merriweather', serif; /* Keeps font consistent with the container */
+    font-size: 3vw; /* Responsive font size, adjust as needed */
+    font-weight: 700; /* Makes the heading bold */
+  }
+  @media (max-width: 768px) {
+    .experience-heading {
+      font-size: 5vw; /* Adjusts font size for smaller screens */
+    }
+  }
+  
   
   
