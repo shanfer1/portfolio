@@ -1,11 +1,27 @@
 <div class="container">
+  <div class="header-icons">
+    <a href="https://www.linkedin.com/in/mshanfermajeed/" target="_blank"  class="transparent-button" pButton pRipple>
+      <i class="pi pi-linkedin"></i>
+    </a>
+    <a href="https://github.com/shanfer1" target="_blank"  class="transparent-button" pButton pRipple>
+      <i class="pi pi-github"></i>
+    </a>
+    <a href="https://twitter.com/shanfer_majeed" target="_blank"  class="transparent-button" pButton pRipple>
+      <i class="pi pi-twitter"></i>
+    </a>
+    <span class="contact-info">
+      <i class="pi pi-envelope"></i> mmajeed2&#64;asu.edu
+    </span>
+  </div>
+
+
   <h2>Muhammed Shanfer Majeed<br><span>Sofware Developer</span></h2>
   <div class="links">
     <a href="#projects" class="link">Projects</a>
     <a href="https://waterdmd.info/mainpage.html" target="_blank" class="link">Research</a>
     <a href="./assets/resume.pdf" class="link" download="MuhammedShanferMajeed_Resume">Resume</a>
   </div>
-  <h3 class="experience-heading">Professional Experience</h3>
+  <h3 class="experience-heading">Experience</h3>
 
   <div class="card-container">
     <p-card header="{{experience.title}}"   subheader="{{experience.subHeading}}"  *ngFor="let experience of experiences">
@@ -25,7 +41,7 @@
               pButton type="button" 
               label="{{productKey}}" 
               (click)="openProduct(experience.products[productKey])" 
-              class="p-button-success productbuttons"> <i class="pi pi-send" style="font-size: 1.2rem"></i>
+              class="p-button-success productbuttons"> <i class="pi pi-send" style="font-size: 1rem"></i>
             </button>
     </div>
       <p class="techstack">

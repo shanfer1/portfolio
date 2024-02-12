@@ -1,4 +1,40 @@
+@import "~primeicons/primeicons.css";
 
+.header-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-icons a {
+    margin-left: 10px;
+    color: #333; /* Icon color */
+  }
+  
+  .header-icons .contact-info {
+    margin-left: 10px;
+    color: #1a335c; /* Text color */
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-icons i {
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
+  /* Styling for the PrimeNG buttons to make them look like plain icons */
+  .p-button {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    color: inherit;
+  }
+  
+  .p-button .pi {
+    font-size: 1.5em; /* Icon size */
+  }
 .container {
     position: static;
     width: 100%;
@@ -19,9 +55,9 @@
 }
 
 .link {
-    color: #333; /* Text color, adjust as needed */
+    color:  #1a335c; /* Text color, adjust as needed */
     text-decoration: none; /* Removes underline from links */
-    font-size: 2vw; /* Adjust as needed for the right size */
+    font-size: 1.5vw; /* Adjust as needed for the right size */
     margin: 0 10px; /* Spacing between the links */
     font-weight: 400;
     text-transform: uppercase;
@@ -38,6 +74,8 @@
   
   .product-buttons button {
     margin-right: 10px; /* Adds space between buttons */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+
   }
   
   /* Remove margin from the last button */
@@ -45,20 +83,24 @@
     margin-right: 0;
   }
 
-  
-
-.link:hover {
-    background-color: #e80202; /* Example hover effect */
+  .p-button:hover {
+    background-color:  #1a335c;; /* Example hover effect */
     color: white; /* Change text color on hover */
-    border-color: #e80202; /* Example border color on hover */
+    border-color: #1a335c;; /* Example border color on hover */
+}
+
+.product-buttons button:hover {
+    background-color:  #1a335c;; /* Example hover effect */
+    color: white; /* Change text color on hover */
+    border-color: #1a335c;; /* Example border color on hover */
 }
 h2{
-    color: #333; /* Text color, adjust as needed */
+    color:  #1a335c;; /* Text color, adjust as needed */
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
     line-height: 0.6em;
     z-index: 1000;
-    font-weight: 900;
+    font-weight: 700;
 }
 h2 span{
     font-size: 0.4em;
@@ -80,12 +122,16 @@ h2 span{
 .block{
     position: absolute;
     width: 50px;
-    height: 100px;
+    height: 50px;
     z-index:-100;
-    background: #e80202;
-    box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
+    background: #e9e5a6;
+    box-shadow: 10px 10px 50px rgba(95, 94, 94, 0.2);
 }
-
+.link:hover {
+    background-color:  #1a335c;; /* Example hover effect */
+    color: white; /* Change text color on hover */
+    border-color: #1a335c;; /* Example border color on hover */
+}
 
 .card-container {
     display: flex;
@@ -106,13 +152,13 @@ h2 span{
     /* font-size: bold; */
   }
   .experience-heading {
-    color: #333; /* Text color, adjust as needed */
-    text-align: center; /* Aligns the text to the center */
+    color:  #1a335c;; /* Text color, adjust as needed */
     margin-top: 60px; /* Adds space above the heading */
     margin-bottom: 20px; /* Adds space below the heading before the cards start */
     font-family: 'Merriweather', serif; /* Keeps font consistent with the container */
     font-size: 3vw; /* Responsive font size, adjust as needed */
     font-weight: 700; /* Makes the heading bold */
+    margin-left: 40px;
   }
   @media (max-width: 768px) {
     .experience-heading {
