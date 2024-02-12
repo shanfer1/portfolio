@@ -47,7 +47,7 @@
         tech: 'Vue.js, Python, Tensorflow, Docker, Kubernetes',
         subHeading: 'UAI Imaging Intelligence - Startup',
         url:'./assets/uai_logo.jpeg',
-        description: "Spearheaded the development of a T1 mapping Dicom Image dashboard leveraging Vue.js to expedite cardiac anomaly detection."
+        description: "At this AI startup, I contributed to the development of a Vue.js-based DICOM Image dashboard for quicker cardiac anomaly detection, and innovated a data processing pipeline using Numpy, Python, and TensorFlow that improved MRI data efficiency by 10%. I also introduced microservice containerization with Docker & Kubernetes, enhancing MR post-processing operations by 40%, and implemented an ECV visualization infrastructure that increased cardiac assessment accuracy by 15%."
       },
 
       {
@@ -57,7 +57,7 @@
         tech: 'Angular, Python, Java, Golang, NLP, Docker, Kubernetes, Helm, AWS EC2, S3, RabbitMQ',
         period: 'Aug 2020 - Aug 2022',
         url:'./assets/ge_healthcare.jpeg',
-        description: "In our software development team, I've led the creation of a Geo Visualization tool with Angular, enhanced predictive analytics with an LSTM-based mental modeler, and contributed to a TensorFlow-powered fitness app. I've also addressed NLP model biases and enriched social network analysis, consistently focusing on user-centric design and collaborative product development."
+        description: "At GE Healthcare, I developed a role-based access control system to bolster cybersecurity, streamlined user interfaces for MR and CT machines, and created an AI-driven Brain Segmentation infrastructure for improved Neuro MRI analysis. I also engineered a Spark NLP pipeline for patient scan recommendations and a security dashboard that reduced product delivery times and enhanced security response. My full-stack integration work on Edison hardware facilitated better patient data visualization. My efforts contributed to web application advancements recognized at Innovate 2021."
       },
 
 
